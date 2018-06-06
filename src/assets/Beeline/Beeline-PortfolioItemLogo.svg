@@ -1,0 +1,129 @@
+<svg id="bee:_apr_12_x_2" data-name="bee: apr 12 x 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #a926fb;
+        stroke: #ed2024;
+        stroke-width: 0;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #c34aff;
+      }
+
+      .cls-2, .cls-3, .cls-8, .cls-9 {
+        opacity: 0.8;
+      }
+
+      .cls-2 {
+        filter: url(#filter);
+      }
+
+      .cls-3 {
+        filter: url(#filter-2);
+      }
+
+      .cls-10, .cls-4, .cls-7, .cls-8, .cls-9 {
+        fill: #fff;
+      }
+
+      .cls-10, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        opacity: 0.4;
+      }
+
+      .cls-5 {
+        fill: #ffc53a;
+        filter: url(#filter-3);
+      }
+
+      .cls-8 {
+        filter: url(#filter-4);
+      }
+
+      .cls-9 {
+        filter: url(#filter-5);
+      }
+
+      .cls-10 {
+        opacity: 0.85;
+      }
+    </style>
+    <filter id="filter" x="0" y="370" width="654" height="277.5" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#c859ff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="0" y="190.5" width="293" height="179.5" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#c859ff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="293.438" y="370.031" width="655.562" height="359.25" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff" flood-opacity="0.3"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" mode="overlay" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-4" x="323" y="647" width="396" height="179" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#c859ff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-5" x="-39" y="647" width="448" height="179" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#c859ff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect class="cls-1" x="1" width="1024" height="1024"/>
+  <g id="blur_3_bk" data-name="blur 3 bk">
+    <rect id="bee_blur:_purple" data-name="bee blur: purple" class="cls-2" y="370" width="654" height="277.5"/>
+    <rect id="bee_blur:_purple_copy_3" data-name="bee blur: purple copy 3" class="cls-3" y="190.5" width="293" height="179.5"/>
+  </g>
+  <g id="bee">
+    <path id="back_wing_copy" data-name="back wing copy" class="cls-4" d="M405.086,189.985a178.147,178.147,0,0,0-63.565,11.736c96.713,30.187,174.981,102.618,232.4,174.467a360.182,360.182,0,0,1,60.369-6.109l0.178,0,0.531-.009,0.4,0,0.593-.008,0.54-.007,0.349,0,0.57,0,0.242,0,0.823,0h0.2l0.67,0h1.979l0.525,0h0.2l0.526,0H642.8l0.578,0h0.122c20.713,0.172,14.759,12.419,34.5,15.96-63.222-78.981-125.381-168.859-235.78-192.127a179.784,179.784,0,0,0-37.134-3.888m-63.565,11.736a179.5,179.5,0,0,0-3.579,334.047c52.385-81.835,137.035-141.019,235.978-159.58-57.418-71.849-135.686-144.28-232.4-174.467"/>
+    <path id="body" class="cls-5" d="M640.469,370.027c-161.79,0-298.582,107.1-343.448,254.306-15.914,52.218,23.331,104.945,77.888,104.945H808.757c118.955,0,183.6-138.888,107.317-230.229C850.218,420.19,751.2,370.027,640.469,370.027m-285.4,359.25h19.841a82.014,82.014,0,0,1-18.606-2.141Z"/>
+    <path id="stripes" class="cls-6" d="M355.065,729.277h19.841a82.014,82.014,0,0,1-18.606-2.141Zm285.4-359.25a359.716,359.716,0,0,0-83.82,9.863L356.3,727.137a82.114,82.114,0,0,0,18.606,2.141H532.525L732.855,382.06a359.143,359.143,0,0,0-92.39-12.033M916.073,499.049a361.15,361.15,0,0,0-71.735-65.5L673.715,729.277H808.756C927.711,729.277,992.353,590.391,916.073,499.049Z"/>
+    <path id="eye" class="cls-7" d="M897.024,592.554a44.738,44.738,0,1,1-44.738-44.768A44.752,44.752,0,0,1,897.024,592.554Z"/>
+    <path id="pupil" class="cls-6" d="M900.024,592.554a27.648,27.648,0,1,1-27.647-27.667A27.657,27.657,0,0,1,900.024,592.554Z"/>
+  </g>
+  <g id="blur_3_fr" data-name="blur 3 fr">
+    <path id="blur_set_3" data-name="blur set 3" class="cls-8" d="M413,647H719L619,826H323Z"/>
+    <path id="blur_set_3_copy" data-name="blur set 3 copy" class="cls-9" d="M-39,647H409L309,826H-39V647Z"/>
+  </g>
+  <g id="front_bee" data-name="front bee">
+    <path id="wheels_copy_7" data-name="wheels copy 7" class="cls-6" d="M753.24,736.465C724.71,785.914,661.524,826,612.108,826s-66.348-40.087-37.818-89.536,91.718-89.536,141.134-89.536S781.772,687.016,753.24,736.465Zm-310.039,0C414.671,785.914,351.485,826,302.069,826s-66.347-40.087-37.817-89.536,91.718-89.536,141.133-89.536S471.733,687.016,443.2,736.465Z"/>
+    <path id="front_wing_copy" data-name="front wing copy" class="cls-10" d="M630.131,560.1l30.527-52.91c17.3,31.615,26.225,52.3,26.225,52.3S664.786,559.866,630.131,560.1Zm-176.969-.854c-44.061-.828-88.273-2.243-126.524-4.57-37.19-2.262-68.744-5.385-89.066-9.668-96.9-20.423-158.9-115.584-138.5-212.549a179.069,179.069,0,0,1,212.4-138.59q15.3,3.224,30.041,7.848c96.713,30.187,174.981,102.618,232.4,174.467l0.011,0.013q-8.718,1.638-17.286,3.689ZM573.931,376.2q-8.718,1.638-17.286,3.689L453.162,559.25c42.243,0.794,84.348,1.047,120.949,1.047,20.773,0,39.779-.081,56.02-0.193l30.527-52.91c-19.023-34.763-48.176-82.748-86.727-130.993"/>
+  </g>
+</svg>

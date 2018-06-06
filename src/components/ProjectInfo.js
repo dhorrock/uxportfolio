@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 class ProjectInfo extends Component {
   render() {
@@ -79,5 +80,15 @@ const Title = styled.h2`
     text-transform: uppercase;
   }
 `;
+
+ProjectInfo.propTypes = {
+  data: PropTypes.shape({
+    client: PropTypes.string.isRequired,
+    objective: PropTypes.string.isRequired,
+    timeline: PropTypes.string.isRequired,
+    team: PropTypes.arrayOf(PropTypes.string).isRequired,
+    role: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export default ProjectInfo;

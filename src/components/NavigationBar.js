@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 class NavigationBar extends Component {
   state = {
@@ -34,7 +35,7 @@ const View = styled.div`
 `;
 
 const Text = styled.p`
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 0;
   margin-top: 2.25rem;
@@ -49,5 +50,9 @@ const Selection = styled(Link)`
   color: ${props => (props.active ? 'red' : 'black')};
   border-bottom: ${props => (props.active ? '3px solid red' : '')};
 `;
+
+NavigationBar.propTypes = {
+  select: PropTypes.func.isRequired,
+};
 
 export default NavigationBar;

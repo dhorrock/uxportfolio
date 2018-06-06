@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import HeaderBlurb from '../components/HeaderBlurb';
-import PortfolioEntries from '../data/data';
-import Header from '../components/Header';
 import ProjectInfo from '../components/ProjectInfo';
 import data from '../data/data';
-import BeelineImageBar from '../assets/Beeline-ImageBar.svg';
+import BeelineImageBar from '../assets/Beeline/Beeline-ImageBar.svg';
 import Section from '../components/Section';
+import Footer from '../components/Footer';
 
 class Beeline extends Component {
   constructor(props) {
@@ -28,7 +27,9 @@ class Beeline extends Component {
         <ProjectInfo data={this.state.data.projectInfo} />
         <Section title={'KICKOFF'} data={this.state.data.kickOff} isDark />
         <Section title={'DESIGN'} data={this.state.data.design} isDark={false} />
-        <Section title={'TESTING'} data={this.state.data.kickOff} isDark />
+        <Section title={'TESTING'} data={this.state.data.testing} isDark />
+        <Section title={'TAKEAWAY'} data={this.state.data.takeaway} isDark={false} />
+        <Footer />
       </View>
     );
   }

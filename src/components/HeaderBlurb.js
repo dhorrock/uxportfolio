@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 class HeaderBlurb extends Component {
   render() {
@@ -54,5 +55,10 @@ const Text = styled.p`
     margin-bottom: 1.125rem;
   }
 `;
+
+HeaderBlurb.propTypes = {
+  data: PropTypes.object.isRequired,
+  bgColor: PropTypes.string.isRequired,
+};
 
 export default HeaderBlurb;

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import PortfolioItem from './PortfolioItem';
 import PortfolioEntries from '../data/data';
-import { Link } from 'react-router-dom';
 
 class Portfolio extends Component {
   render() {

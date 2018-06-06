@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 class PortfolioItem extends Component {
   render() {
@@ -64,9 +65,15 @@ const Content = styled.div`
 `;
 
 const Image = styled.img`
+  border-radius: 20px;
+  width: 140px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 `;
+
+PortfolioItem.propTypes = {
+  data: PropTypes.object.isRequired,
+};
 
 export default PortfolioItem;
