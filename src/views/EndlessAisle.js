@@ -8,19 +8,17 @@ import Section from '../components/Section';
 import FooterNavigation from '../components/FooterNavigator';
 import ImageBar from '../components/ImageBar';
 
-class Beeline extends Component {
+class EndlessAisle extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: data.find(item => item.title === 'Beeline'),
-      currentIndex: data.findIndex(item => item.title === 'Beeline'),
+      data: data.find(item => item.title === 'Endless Aisle'),
+      currentIndex: data.findIndex(item => item.title === 'Endless Aisle'),
     };
   }
-
   componentDidMount() {
     window.scrollTo(0, 0);
   }
-
   render() {
     return (
       <View>
@@ -40,5 +38,4 @@ class Beeline extends Component {
 const View = styled.div`
   display: block;
 `;
-
-export default Beeline;
+export default EndlessAisle;

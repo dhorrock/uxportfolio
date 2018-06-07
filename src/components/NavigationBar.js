@@ -16,10 +16,10 @@ class NavigationBar extends Component {
   render() {
     return (
       <View>
-        <Selection active={this.state.selected === 1} to="/" onClick={() => this.clickAction(1)}>
+        <Selection isactive={this.state.selected === 1} to="/" onClick={() => this.clickAction(1)}>
           <Text>PORTFOLIO</Text>
         </Selection>
-        <Selection active={this.state.selected === 2} to="/about" onClick={() => this.clickAction(2)}>
+        <Selection isactive={this.state.selected === 2} to="/about" onClick={() => this.clickAction(2)}>
           <Text>ABOUT</Text>
         </Selection>
       </View>
@@ -47,8 +47,8 @@ const Selection = styled(Link)`
   margin: 20px;
   cursor: pointer;
   padding-bottom: 10px;
-  color: ${props => (props.active ? 'red' : 'black')};
-  border-bottom: ${props => (props.active ? '3px solid red' : '')};
+  color: ${props => (props.isactive ? 'red' : 'black')};
+  border-bottom: ${props => (props.isactive ? '3px solid red' : '')};
 `;
 
 NavigationBar.propTypes = {

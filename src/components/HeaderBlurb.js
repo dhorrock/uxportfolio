@@ -57,8 +57,10 @@ const Text = styled.p`
 `;
 
 HeaderBlurb.propTypes = {
-  data: PropTypes.object.isRequired,
   bgColor: PropTypes.string.isRequired,
+  data: PropTypes.shape({
+    blurbTitle: PropTypes.string.isRequired,
+    blurb: PropTypes.string.isRequired,
+  }).isRequired,
 };
-
 export default HeaderBlurb;

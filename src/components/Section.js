@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 class Section extends Component {
   render() {
@@ -8,7 +9,7 @@ class Section extends Component {
         <Content>
           <Title>{this.props.title}</Title>
           <Text>{this.props.data.topText}</Text>
-          {this.props.data.images.map(image => <Image src={image} />)}
+          {this.props.data.images.map(image => <Image src={image} key={image} />)}
           <Text>{this.props.data.bottomText}</Text>
         </Content>
       </View>
@@ -64,5 +65,15 @@ const Image = styled.img`
   vertical-align: middle;
   margin-bottom: 10%;
 `;
+
+Section.propTypes = {
+  isDark: PropTypes.bool.isRequired,
+  title: PropTypes.string.isRequired,
+  data: PropTypes.shape({
+    topText: PropTypes.string.isOptional,
+    images: PropTypes.arrayOf(PropTypes.string).isOptional,
+    bottomText: PropTypes.string.isOptional,
+  }).isRequired,
+};
 
 export default Section;

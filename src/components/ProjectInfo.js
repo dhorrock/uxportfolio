@@ -22,7 +22,7 @@ class ProjectInfo extends Component {
           </Text>
           <Text>
             <strong>Team: </strong>
-            {this.props.data.team.map(member => <ListItem>{member}</ListItem>)}
+            {this.props.data.team.map(member => <ListItem key={member}>{member}</ListItem>)}
           </Text>
           <Text>
             <strong>My Role: </strong>

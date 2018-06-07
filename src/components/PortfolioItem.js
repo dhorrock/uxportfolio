@@ -73,7 +73,12 @@ const Image = styled.img`
 `;
 
 PortfolioItem.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.shape({
+    link: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default PortfolioItem;

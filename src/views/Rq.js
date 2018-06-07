@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import HeaderBlurb from '../components/HeaderBlurb';
+import ProjectInfo from '../components/ProjectInfo';
 import data from '../data/data';
+import BeelineImageBar from '../assets/Beeline/Beeline-ImageBar.svg';
+import Section from '../components/Section';
+import FooterNavigation from '../components/FooterNavigator';
+import ImageBar from '../components/ImageBar';
 
 class RQ extends Component {
   constructor(props) {
@@ -9,15 +14,23 @@ class RQ extends Component {
 
     this.state = {
       data: data.find(item => item.title === 'RQ'),
+      currentIndex: data.findIndex(item => item.title === 'RQ'),
     };
   }
   componentDidMount() {
-    window.scrollTo(0, 400);
+    window.scrollTo(0, 0);
   }
   render() {
     return (
       <View>
-        <HeaderBlurb title={this.state.data.blurbTitle} blurb={this.state.data.blurb} bgColor={'#1a1e23'} />
+        <HeaderBlurb data={this.state.data.headerBlurb} bgColor={'#1a1e23'} />
+        <ImageBar image={BeelineImageBar} />
+        <ProjectInfo data={this.state.data.projectInfo} />
+        <Section title={'KICKOFF'} data={this.state.data.kickOff} isDark />
+        <Section title={'DESIGN'} data={this.state.data.design} isDark={false} />
+        <Section title={'TESTING'} data={this.state.data.testing} isDark />
+        <Section title={'TAKEAWAY'} data={this.state.data.takeaway} isDark={false} />
+        <FooterNavigation currentIndex={this.state.currentIndex} />
       </View>
     );
   }

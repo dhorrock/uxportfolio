@@ -1,14 +1,16 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Open Sans';
 }
 
 a {
   text-decoration: none;
   color:inherit;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 ::selection {
-  background: #ffb7b7; /* WebKit/Blink Browsers */
+  background: #ffb7b7;
 }
+
