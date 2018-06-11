@@ -9,7 +9,12 @@ class Section extends Component {
         <Content>
           <Title>{this.props.title}</Title>
           <Text>{this.props.data.topText}</Text>
-          {this.props.data.images.map(image => <Image src={image} key={image} />)}
+          {this.props.data.images.map(image => (
+            <div>
+              <Image src={image.image} key={image.image} />
+              <FigCap>{image.caption}</FigCap>
+            </div>
+          ))}
           <Text>{this.props.data.bottomText}</Text>
         </Content>
       </View>
@@ -63,7 +68,13 @@ const Image = styled.img`
   width: 100%;
   height: auto;
   vertical-align: middle;
-  margin-bottom: 10%;
+  margin-top: 5%;
+`;
+
+const FigCap = styled.figcaption`
+  text-align: center;
+  background-color: #333;
+  color: white;
 `;
 
 Section.propTypes = {
@@ -71,7 +82,7 @@ Section.propTypes = {
   title: PropTypes.string.isRequired,
   data: PropTypes.shape({
     topText: PropTypes.string.isOptional,
-    images: PropTypes.arrayOf(PropTypes.string).isOptional,
+    images: PropTypes.arrayOf(PropTypes.object).isOptional,
     bottomText: PropTypes.string.isOptional,
   }).isRequired,
 };

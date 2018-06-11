@@ -48,6 +48,8 @@ const Title = styled.h2`
 
 const Text = styled.p`
   color: ${props => (props.link ? 'red' : 'black')};
+  margin-left: 20px;
+  margin-right: 20px;
   font-size: 1.5rem;
   line-height: 2.25rem;
   margin-top: 0.5625rem;

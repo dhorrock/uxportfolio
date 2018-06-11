@@ -3,10 +3,10 @@ import styled from 'styled-components';
 import HeaderBlurb from '../components/HeaderBlurb';
 import ProjectInfo from '../components/ProjectInfo';
 import data from '../data/data';
-import BeelineImageBar from '../assets/Beeline/Beeline-ImageBar.svg';
 import Section from '../components/Section';
 import FooterNavigation from '../components/FooterNavigator';
 import ImageBar from '../components/ImageBar';
+import RqImageBar from '../assets/Rq/Rq-ImageBar.png';
 
 class RQ extends Component {
   constructor(props) {
@@ -24,7 +24,7 @@ class RQ extends Component {
     return (
       <View>
         <HeaderBlurb data={this.state.data.headerBlurb} bgColor={'#1a1e23'} />
-        <ImageBar image={BeelineImageBar} />
+        <ImageBar image={RqImageBar} />
         <ProjectInfo data={this.state.data.projectInfo} />
         <Section title={'KICKOFF'} data={this.state.data.kickOff} isDark />
         <Section title={'DESIGN'} data={this.state.data.design} isDark={false} />

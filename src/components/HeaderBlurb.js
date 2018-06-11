@@ -31,6 +31,7 @@ const Content = styled.div`
 `;
 
 const Title = styled.h1`
+  display: block;
   font-size: 4.875rem;
   line-height: 5.625rem;
   margin-bottom: 2.25rem;

@@ -9,6 +9,7 @@ class ImageBar extends Component {
 
 const Image = styled.img`
   display: block;
+  background-color: white;
   width: 100%;
   height: auto;
   vertical-align: middle;

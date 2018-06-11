@@ -7,7 +7,7 @@ class ProjectInfo extends Component {
     return (
       <View>
         <Content>
-          <Title>Details</Title>
+          <Title>About</Title>
           <Text>
             <strong>Client: </strong>
             {this.props.data.client}
