@@ -4,9 +4,10 @@ import HeaderBlurb from '../components/HeaderBlurb';
 import ProjectInfo from '../components/ProjectInfo';
 import data from '../data/data';
 import Section from '../components/Section';
+import DiscoverySection from '../components/DiscoverySection';
 import FooterNavigation from '../components/FooterNavigator';
 import ImageBar from '../components/ImageBar';
-import RqImageBar from '../assets/Rq/Rq-ImageBar.png';
+import RqImageBar from '../assets/Rq/Rq-ImageBar.svg';
 
 class RQ extends Component {
   constructor(props) {
@@ -27,7 +28,7 @@ class RQ extends Component {
         <ImageBar image={RqImageBar} />
         <ProjectInfo data={this.state.data.projectInfo} />
         <Section title={'KICKOFF'} data={this.state.data.kickOff} isDark />
-        <Section title={'DESIGN'} data={this.state.data.design} isDark={false} />
+        <DiscoverySection data={this.state.data.discovery} isDark={false} />
         <Section title={'TESTING'} data={this.state.data.testing} isDark />
         <Section title={'TAKEAWAY'} data={this.state.data.takeaway} isDark={false} />
         <FooterNavigation currentIndex={this.state.currentIndex} />

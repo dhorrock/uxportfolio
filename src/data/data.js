@@ -1,16 +1,21 @@
 import BeelineLogo from '../assets/Beeline/Beeline-PortfolioItemLogo.svg';
-import RqLogo from '../assets/Rq/Rq-PortfolioItemLogo.svg';
 import ecodialerLogo from '../assets/ecodialer/ecodialer-PortfolioItemLogo.svg';
 import EndlessAisleLogo from '../assets/EndlessAisle/Endless-Aisle-PortfolioItemLogo.svg';
+//RQ CONTENT
+import RqLogo from '../assets/Rq/Rq-PortfolioItemLogo.svg';
 import RqKickOffImage1 from '../assets/Rq/Rq-KickOffImage1.png';
 import RqKickOffImage2 from '../assets/Rq/Rq-KickOffImage2.png';
 import RqKickOffImage3 from '../assets/Rq/Rq-KickOffImage3.png';
+import RqDiscoveryImage1 from '../assets/Rq/Rq-DiscoveryImage1.svg';
+import RqDiscoveryImage2 from '../assets/Rq/Rq-DiscoveryImage2.svg';
+import RqDiscoveryImage3 from '../assets/Rq/Rq-DiscoveryImage3.svg';
+import RqDiscoveryImage4 from '../assets/Rq/Rq-DiscoveryImage4.svg';
 
 const portfolioItems = [
   {
     key: 0,
     title: 'RQ',
-    description: 'Evolving the customer followups.',
+    description: 'Evolving customer followup calls.',
     image: RqLogo,
     link: 'RQ',
     headerBlurb: {
@@ -25,21 +30,47 @@ const portfolioItems = [
       timeline: '6 months',
       team: ['Product Manager', 'UX Designer (← me)', 'UX Researcher', '3-5 Developers', 'Business Analyst'],
       role:
-        'I led the design of the customer follow-up experience between April 2017 and October 2017. I stopped working on the project during the detailed visual design phase.',
+        'I led the design of the customer follow-up experience between April 2017 and October 2017 until the project entered the detailed visual design phase.',
     },
     kickOff: {
       topText:
-        "At the outset of the project we didn't know much about the specific goals of a successful customer follow-up experience. Without pre-existing insights, I partnered with our researcher Amanda to explore what customers thought about follow-ups from retailers. Together we conducted a Google Design sprint over a period of five days to answer critical business questions through design, prototyping and testing ideas with customers. ",
+        "At the outset of the project we didn't know much about the specific goals of a successful customer follow-up experience. Without pre-existing insights, I partnered with our UX researcher to explore what customers thought about follow-ups from retailers. Together we conducted a Google Design sprint over a period of five days to answer critical business questions through design, prototyping and testing ideas with customers. ",
       images: [
         { image: RqKickOffImage1, caption: 'Fig.1 Customer Follow-up Research' },
         { image: RqKickOffImage2, caption: 'Fig.2 Storyboarding' },
         { image: RqKickOffImage3, caption: 'Fig.3 Key Learnings' },
       ],
-      bottomText: 'At the end of the sprint we had {insert discoveries here}',
+      bottomText: '',
     },
+    discovery: [
+      {
+        title: 'Agitation',
+        blurb:
+          'Phone calls were not a method of communication that our testers positively associate with brand interaction. Instead, they viewed unsolicited business calls to be nothing more than pestering from telemarketers. It was not so much that the testers felt dislike for the phone. They still spent time talking, but they prefer to do it with their family and close friends.',
+        image: RqDiscoveryImage1,
+      },
+      {
+        title: 'Remembering',
+        blurb:
+          'Phone conversations can be difficult to recall. “Was the address 113 or 131?” Hours after a phone conversation, details like these tend to slip away. But with SMS, everyone has a readily retrievable transcript of the conversation. An individual can go back and see that the address is 113. There’s less pressure on the recipient to remember everything.',
+        image: RqDiscoveryImage2,
+      },
+      {
+        title: 'Stress',
+        blurb:
+          'Text messages are less stressful than phone calls. Phone calls may require the person to come up with answers on the spot or remember specific questions he or she wanted to ask. By contrast, a text message gives the recipient time to think and respond on his or her own time. It’s a more organized experience that involves less overall pressure.',
+        image: RqDiscoveryImage3,
+      },
+      {
+        title: 'Sensitive information',
+        blurb:
+          'Sharing personal or sensitive information on a phone call is a concern. Finding the privacy to share sensitive information also isn’t always possible. But with SMS, an individual is able to silently send this information without announcing it the world around them.',
+        image: RqDiscoveryImage4,
+      },
+    ],
     design: {
-      topText:
-        'This text has not been completed yet This text has not been completed yet This text has not been completed yet This text has not been completed yet This text has not been completed yet This text has not been completed yet',
+      figma: 'http://www.google.ca/',
+      topText: 'Before I could jump into designing, it was important to define ',
       images: [{ image: 'http://via.placeholder.com/3000x1500', caption: 'caption' }],
       bottomText: '',
     },

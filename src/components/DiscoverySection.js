@@ -3,25 +3,24 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-class Section extends Component {
+class DiscoverySection extends Component {
   render() {
     return (
       <View isDark={this.props.isDark}>
         <Content>
-          <Title>{this.props.title}</Title>
-          {this.props.hasFigma && (
-            <Link target={'_blank'} to={this.props.data.figma}>
-              <FigmaLink>Figma</FigmaLink>
-            </Link>
-          )}
-          <Text>{this.props.data.topText}</Text>
-          {this.props.data.images.map(image => (
-            <div>
-              <Image src={image.image} key={image.image} />
-              <FigCap>{image.caption}</FigCap>
-            </div>
-          ))}
-          <Text>{this.props.data.bottomText}</Text>
+          <Title>Discoveries</Title>
+          <Cardview>
+            {this.props.data.map(object => (
+              <Card>
+                <Image src={object.image} key={object.title} />
+                <Text>
+                  <strong>{object.title}</strong>
+                </Text>
+                <Text>{object.blurb}</Text>
+              </Card>
+            ))}
+            <Text>{this.props.data.bottomText}</Text>
+          </Cardview>
         </Content>
       </View>
     );
@@ -38,25 +37,12 @@ const View = styled.div`
 
 const Content = styled.div`
   display: inline-block;
+  width: 100%;
   color: black;
   margin: 10%;
 `;
 
 const Text = styled.p`
-  font-size: 1.5rem;
-  line-height: 2.25rem;
-  margin-top: 2.25rem;
-  margin-bottom: 2.25rem;
-  @media (max-width: 767px) and (min-width: 0) {
-    margin-top: 1.125rem;
-    margin-bottom: 1.125rem;
-    font-size: 1.063rem;
-    line-height: 1.688rem;
-  }
-`;
-
-const FigmaLink = styled.a`
-  color: red;
   font-size: 1.5rem;
   line-height: 2.25rem;
   margin-top: 2.25rem;
@@ -84,20 +70,25 @@ const Title = styled.h2`
 `;
 
 const Image = styled.img`
-  display: block;
   width: 100%;
-  height: auto;
-  vertical-align: middle;
-  margin-top: 5%;
 `;
 
-const FigCap = styled.figcaption`
-  text-align: center;
-  background-color: #333;
-  color: white;
+const Cardview = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 `;
 
-Section.propTypes = {
+const Card = styled.div`
+  width: 46%;
+  margin: 2%;
+  @media (max-width: 767px) and (min-width: 0) {
+    width: 100%;
+  }
+`;
+
+DiscoverySection.propTypes = {
   isDark: PropTypes.bool.isRequired,
   title: PropTypes.string.isRequired,
   data: PropTypes.shape({
@@ -108,4 +99,4 @@ Section.propTypes = {
   }).isRequired,
 };
 
-export default Section;
+export default DiscoverySection;

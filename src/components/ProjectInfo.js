@@ -9,7 +9,7 @@ class ProjectInfo extends Component {
         <Content>
           <Title>About</Title>
           <Text>
-            <strong>Client: </strong>
+            <strong>For: </strong>
             {this.props.data.client}
           </Text>
           <Text>

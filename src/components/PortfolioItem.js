@@ -12,7 +12,7 @@ class PortfolioItem extends Component {
             <Image src={this.props.data.image} />
             <Title>{this.props.data.title}</Title>
             <Text>{this.props.data.description}</Text>
-            <Text link={true}>Read more</Text>
+            <Text link={true}>(Read more)</Text>
           </Content>
         </View>
       </Link>
@@ -47,7 +47,7 @@ const Title = styled.h2`
 `;
 
 const Text = styled.p`
-  color: ${props => (props.link ? 'red' : 'black')};
+  color: ${props => (props.link ? 'black' : 'black')};
   margin-left: 20px;
   margin-right: 20px;
   font-size: 1.5rem;

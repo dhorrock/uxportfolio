@@ -47,8 +47,8 @@ const Selection = styled(Link)`
   margin: 20px;
   cursor: pointer;
   padding-bottom: 10px;
-  color: ${props => (props.isactive ? 'red' : 'black')};
-  border-bottom: ${props => (props.isactive ? '3px solid red' : '')};
+  color: ${props => (props.isactive ? 'black' : 'black')};
+  border-bottom: ${props => (props.isactive ? '3px solid black' : '')};
 `;
 
 NavigationBar.propTypes = {
