@@ -28,6 +28,13 @@ class ProjectInfo extends Component {
             <strong>My Role: </strong>
             {this.props.data.role}
           </Text>
+          <Text>
+            <Disclaimer>
+              To comply with my non-disclosure agreement, I have omitted and obfuscated confidential information in this
+              case study. All information in this case study is my own and does not necessarily reflect the views of
+              anyone but myself.
+            </Disclaimer>
+          </Text>
         </Content>
       </View>
     );
@@ -79,6 +86,10 @@ const Title = styled.h2`
     margin-bottom: 0.5625rem;
     text-transform: uppercase;
   }
+`;
+
+const Disclaimer = styled.i`
+  color: grey;
 `;
 
 ProjectInfo.propTypes = {

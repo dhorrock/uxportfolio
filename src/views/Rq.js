@@ -29,8 +29,9 @@ class RQ extends Component {
         <ProjectInfo data={this.state.data.projectInfo} />
         <Section title={'KICKOFF'} data={this.state.data.kickOff} isDark />
         <DiscoverySection data={this.state.data.discovery} isDark={false} />
-        <Section title={'TESTING'} data={this.state.data.testing} isDark />
-        <Section title={'TAKEAWAY'} data={this.state.data.takeaway} isDark={false} />
+        <Section title={'DESIGN'} data={this.state.data.design} isDark />
+        <Section title={'BETA & TESTING'} data={this.state.data.testing} isDark={false} />
+        <Section title={'TAKEAWAY'} data={this.state.data.takeaway} isDark />
         <FooterNavigation currentIndex={this.state.currentIndex} />
       </View>
     );

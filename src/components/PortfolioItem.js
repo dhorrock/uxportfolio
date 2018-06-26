@@ -12,7 +12,6 @@ class PortfolioItem extends Component {
             <Image src={this.props.data.image} />
             <Title>{this.props.data.title}</Title>
             <Text>{this.props.data.description}</Text>
-            <Text link={true}>(Read more)</Text>
           </Content>
         </View>
       </Link>
@@ -23,6 +22,7 @@ class PortfolioItem extends Component {
 const View = styled.div`
   display: inline-flex;
   width: calc(100% - 200px);
+  max-width: 900px;
   background-color: white;
   height: 400px;
   margin-bottom: 40px;
@@ -55,7 +55,7 @@ const Text = styled.p`
   margin-top: 0.5625rem;
   margin-bottom: 1.6875rem;
   @media (max-width: 767px) and (min-width: 0) {
-    font-size: 1.063rem;
+    font-size: 1.263rem;
     line-height: 1.688rem;
     margin-bottom: 1.125rem;
     margin-top: 0.5625rem;
@@ -72,6 +72,7 @@ const Image = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1.6875rem;
 `;
 
 PortfolioItem.propTypes = {

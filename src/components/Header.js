@@ -1,16 +1,29 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import HeaderLogo from '../assets/Common/Header-Logo.svg';
+import Lottie from 'react-lottie';
+import * as animationData from '../data/data.json';
 
 class Header extends Component {
   render() {
     return (
       <View>
         <Link to={'/'}>
-          <Logo src={HeaderLogo} />
+          <Lottie
+            options={{
+              loop: true,
+              autoplay: true,
+              animationData: animationData,
+              rendererSettings: {
+                preserveAspectRatio: 'xMidYMid slice',
+              },
+            }}
+            height={250}
+            width={200}
+            isStopped={false}
+            isPaused={false}
+          />
         </Link>
-        <Text>Dustin Horrock is a UX Designer in Winnipeg</Text>
       </View>
     );
   }
@@ -21,7 +34,7 @@ const View = styled.div`
   padding-top: 80px;
 `;
 const Text = styled.p`
-  font-family: Cormorant Garamond;
+  font-family: 'Open Sans';
   font-weight: 300;
   text-align: center;
   font-size: 1.288rem;
@@ -32,7 +45,8 @@ const Logo = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 100px;
+  height: 200px;
+  margin-bottom: 2.25rem;
 `;
 
 export default Header;
