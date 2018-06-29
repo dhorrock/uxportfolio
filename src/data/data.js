@@ -1,8 +1,11 @@
-import BeelineLogo from '../assets/Beeline/Beeline-PortfolioItemLogob.svg';
-import ecodialerLogo from '../assets/ecodialer/ecodialer-PortfolioItemLogob.svg';
-import EndlessAisleLogo from '../assets/EndlessAisle/Endless-Aisle-PortfolioItemLogob.svg';
+import BeelineLogo from '../assets/Beeline/Beeline-PortfolioItemLogoA.svg';
+import ecodialerLogo from '../assets/ecodialer/ecodialer-PortfolioItemLogoA.svg';
+import EndlessAisleLogo from '../assets/EndlessAisle/Endless-Aisle-PortfolioItemLogoA.svg';
+import WowVRLogo from '../assets/WowVR/WowVR-PortfolioItemLogoA.svg';
+import PrequelMemesLogo from '../assets/PrequelMemes/PrequelMemes-PortfolioItemLogoA.svg';
+import PatioBuilderLogo from '../assets/PatioBuilder/PatioBuilder-PortfolioItemLogoA.svg';
 //RQ
-import RqLogo from '../assets/Rq/Rq-PortfolioItemLogob.svg';
+import RqLogo from '../assets/Rq/RQ-PortfolioItemLogoA.svg';
 import RqKickOffImage1 from '../assets/Rq/Rq-KickOffImage1.png';
 import RqKickOffImage2 from '../assets/Rq/Rq-KickOffImage2.png';
 import RqKickOffImage3 from '../assets/Rq/Rq-KickOffImage3.png';
@@ -19,11 +22,11 @@ const portfolioItems = [
   {
     key: 0,
     title: 'RQ',
-    description: 'Evolving customer followups.',
+    description: 'Evolving customer follow-ups',
     image: RqLogo,
     link: 'RQ',
     headerBlurb: {
-      blurbTitle: 'Ring..ring?',
+      blurbTitle: 'RQ',
       blurb:
         'Customer follow-ups are an integral component of doing business, but does anyone answer phone calls anymore? I was part of an ambitious project to redesign and evolve the customer follow-up experiece for the largest POS system in the wireless market.',
     },
@@ -230,7 +233,7 @@ const portfolioItems = [
     key: 4,
     title: 'Prequel memes',
     description: 'This is Prequel memes',
-    image: '',
+    image: PrequelMemesLogo,
     link: 'PrequelMemes',
     headerBlurb: {
       blurbTitle: 'Beeline the man is bee',
@@ -274,7 +277,7 @@ const portfolioItems = [
     key: 5,
     title: 'WowVR',
     description: 'This is WowVR',
-    image: '',
+    image: WowVRLogo,
     link: 'WowVR',
     headerBlurb: {
       blurbTitle: 'Beeline the man is bee',
@@ -318,7 +321,7 @@ const portfolioItems = [
     key: 6,
     title: 'Patio Builder',
     description: 'This is Patio Builder',
-    image: '',
+    image: PatioBuilderLogo,
     link: 'PatioBuilder',
     headerBlurb: {
       blurbTitle: 'Beeline the man is bee',

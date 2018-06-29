@@ -2,5 +2,5 @@
 
 yarn run build
 mv build/index.html build/200.html
-surge build dho.surge.sh
+surge build jho.surge.sh
 yarn start

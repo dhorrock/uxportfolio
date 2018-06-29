@@ -10,8 +10,13 @@ class PortfolioItem extends Component {
         <View>
           <Content>
             <Image src={this.props.data.image} />
-            <Title>{this.props.data.title}</Title>
-            <Text>{this.props.data.description}</Text>
+            <InnerContent>
+              <ContentWrapper>
+                <Title>{this.props.data.title}</Title>
+                <Text>—</Text>
+                <Text>{this.props.data.description}</Text>
+              </ContentWrapper>
+            </InnerContent>
           </Content>
         </View>
       </Link>
@@ -21,59 +26,61 @@ class PortfolioItem extends Component {
 
 const View = styled.div`
   display: inline-flex;
-  width: calc(100% - 200px);
-  max-width: 900px;
+  height: 50vw;
+  width: 50vw;
+  max-width: 600px;
+  max-height: 600px;
   background-color: white;
-  height: 400px;
-  margin-bottom: 40px;
-  align-items: center;
-  justify-content: center;
+  margin-top: 40px;
   @media (max-width: 767px) and (min-width: 0) {
-    width: calc(100% - 80px);
+    min-width: 350px;
+    min-height: 350px;
   }
 `;
 const Title = styled.h2`
   text-align: center;
   font-size: 3.438rem;
   line-height: 4.5rem;
-  margin-top: 0.5625rem;
   margin-bottom: 0;
+  margin-top: 0;
   @media (max-width: 767px) and (min-width: 0) {
     font-size: 2.438em;
     line-height: 2.8125rem;
-    margin-top: 0.5625rem;
-    margin-bottom: 1.125rem;
   }
 `;
 
 const Text = styled.p`
   color: ${props => (props.link ? 'black' : 'black')};
+  margin-top: 0;
   margin-left: 20px;
   margin-right: 20px;
   font-size: 1.5rem;
   line-height: 2.25rem;
-  margin-top: 0.5625rem;
-  margin-bottom: 1.6875rem;
+  margin-bottom: 0;
   @media (max-width: 767px) and (min-width: 0) {
     font-size: 1.263rem;
     line-height: 1.688rem;
-    margin-bottom: 1.125rem;
-    margin-top: 0.5625rem;
   }
 `;
 
 const Content = styled.div`
-  display: inline-block;
+  display: block;
+  width: 100%;
+  height: 100%;
+`;
+
+const InnerContent = styled.div`
+  display: flex;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Image = styled.img`
-  border-radius: 20px;
-  width: 140px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1.6875rem;
+  width: 100%;
 `;
+
+const ContentWrapper = styled.div``;
 
 PortfolioItem.propTypes = {
   data: PropTypes.shape({

@@ -19,12 +19,15 @@ class RQ extends Component {
     };
   }
   componentDidMount() {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 450,
+      behavior: 'smooth',
+    });
   }
   render() {
     return (
       <View>
-        <HeaderBlurb data={this.state.data.headerBlurb} bgColor={'#1a1e23'} />
+        <HeaderBlurb data={this.state.data.headerBlurb} bgColor={'#001e56'} />
         <ImageBar image={RqImageBar} />
         <ProjectInfo data={this.state.data.projectInfo} />
         <Section title={'KICKOFF'} data={this.state.data.kickOff} isDark />

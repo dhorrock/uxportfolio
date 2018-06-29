@@ -10,9 +10,13 @@ class Portfolio extends Component {
 }
 
 const View = styled.div`
-  display: block;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  margin: 0 auto;
   text-align: center;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1280px;
+  @media (max-width: 1250px) and (min-width: 0) {
+    grid-template-columns: 1fr;
+  
 `;
 export default Portfolio;
