@@ -4,6 +4,16 @@ import EndlessAisleLogo from '../assets/EndlessAisle/Endless-Aisle-PortfolioItem
 import WowVRLogo from '../assets/WowVR/WowVR-PortfolioItemLogoA.svg';
 import PrequelMemesLogo from '../assets/PrequelMemes/PrequelMemes-PortfolioItemLogoA.svg';
 import PatioBuilderLogo from '../assets/PatioBuilder/PatioBuilder-PortfolioItemLogoA.svg';
+import PortfolioLogo from '../assets/Portfolio/Portfolio-PortfolioItemLogoA.svg';
+
+//PM
+import PrequelMemesKickOffImage1 from '../assets/PrequelMemes/PrequelMemes-KickOffImage1.svg';
+import PrequelMemesKickOffImage2 from '../assets/PrequelMemes/PrequelMemes-KickOffImage2.svg';
+import PrequelMemesDesignImage1 from '../assets/PrequelMemes/PrequelMemes-DesignImage2.svg';
+import PrequelMemesDesignImage2 from '../assets/PrequelMemes/PrequelMemes-DesignImage1.svg';
+import PrequelMemesDesignImage3 from '../assets/PrequelMemes/PrequelMemes-DesignImage3.png';
+import PrequelMemesAnalyticsImage1 from '../assets/PrequelMemes/PrequelMemes-Analytics1.svg';
+
 //RQ
 import RqLogo from '../assets/Rq/RQ-PortfolioItemLogoA.svg';
 import RqKickOffImage1 from '../assets/Rq/Rq-KickOffImage1.png';
@@ -231,46 +241,81 @@ const portfolioItems = [
   },
   {
     key: 4,
-    title: 'Prequel memes',
-    description: 'This is Prequel memes',
+    title: 'Prequel Memes',
+    description: 'Now this is podracing',
     image: PrequelMemesLogo,
     link: 'PrequelMemes',
     headerBlurb: {
-      blurbTitle: 'Beeline the man is bee',
+      blurbTitle: 'Prequel Memes',
       blurb:
-        'In 2012, tapping a button to Uber across the city felt magical. By the start of 2016, this magic receded to a slew of disparate features that made the experience slow and complex to use. I was part of an ambitious project to redesign the Uber pickup experience for the fastest growing startup in history.',
+        'A long time ago, in a subreddit far far away… The lack of original content being delivered to the outlying Star Wars communities has users in turmoil. Hoping to resolve the matter, I set out to create the ultimate tool to encourage content creation and bring balance to the subreddit of /r/PrequelMemes.',
     },
     projectInfo: {
-      client: 'Passion Project',
+      client: 'Fun :)',
       objective:
-        'VW aimed to transform technology within their enterprise. They established a digital labs in Berlin as an incubator for enabling lean mobile products that strengthened their community and brand.',
-      timeline: '6-8 weeks Development',
-      team: ['2 Product Designers', '1 Developer'],
-      role: 'I did this and this and this and this and this.',
+        'Aimed to simplify the creation process for making hilarious Star Wars memes. A small team of colleagues set out to create an web application that would enable Star Wars fans to easily create wacky concoctions and share them with the world.',
+      timeline: '6 months',
+      team: ['2 UX Designers (← me)', 'Front End Developer', 'Back End Developer (← me)', 'Build Tools (← me)'],
+      role: 'I created the front end design, back end services, and build tools for the project.',
     },
     kickOff: {
       topText:
-        'At the outset of the project we didn’t have a clear mission or specific goals for the pickup experience.Without pre-existing insights, I partnered with our researcher Shruti to explore how Riders were getting around.',
-      images: ['http://via.placeholder.com/3000x1500'],
-      bottomText: 'Bottom text',
-    },
-    design: {
-      topText:
-        'At the outset of the project we didn’t have a clear mission or specific goals for the pickup experience.Without pre-existing insights, I partnered with our researcher Shruti to explore how Riders were getting around.',
-      images: ['http://via.placeholder.com/3000x1500'],
+        'Before design started on the project needed consider some of the different use cases for the application. The best resource for determining this was to reach out directly to the reddit community for their input. Posts were made over a period of a few days investigating some of the pain points users had while creating content, I also investigated into some of the reasons why users might not create images. Key problems and possible solutions were put onto stickies and organized.',
+      images: [
+        { image: PrequelMemesKickOffImage1, caption: '' },
+        { image: PrequelMemesKickOffImage2, caption: 'Fig.1 Research' },
+      ],
       bottomText: '',
+    },
+    discovery: [
+      {
+        title: '1. IMAGE TROUBLE',
+        blurb:
+          'Users currently use Google image search to find movie screenshots. However, desired screenshots are often not found with this method or are unusable due to poor image quality.',
+        image: RqDiscoveryImage1,
+      },
+      {
+        title: '2. CONSUMERS',
+        blurb:
+          'Some users don’t actually wish to create content. Instead, they prefer to only view the content, laugh and sometimes share it within their social groups.',
+        image: RqDiscoveryImage2,
+      },
+      {
+        title: '3. UNDERSTANDING',
+        blurb:
+          'Creating content requires the skill of using a design application such as GIMP, this skill is a blocker for the users who want to create but lack the knowledge to.',
+        image: RqDiscoveryImage3,
+      },
+      {
+        title: '4. MOBILE',
+        blurb:
+          'Majority of users primarily use their mobile devices and lack the necessary apps for image editing and others just find it too frustrating to do on their mobile devices.',
+        image: RqDiscoveryImage4,
+      },
+    ],
+    design: {
+      figma: 'http://www.google.ca/',
+      topText:
+        'Now that key problems had been identified it was now clear the perfect solution would be an image library that is easy to navigate, it had to have a good selection of high quality images, it would to allow users to perform basic editing such as adding text and combining images and most importantly it needed to be designed for mobile users first. A user journey map was also created to identify any addtional opportunites for improvement.',
+      images: [
+        { image: PrequelMemesDesignImage2, caption: '' },
+        { image: PrequelMemesDesignImage1, caption: '' },
+        { image: PrequelMemesDesignImage3, caption: 'Final User Flow' },
+      ],
+      bottomText:
+        'The navigation of the library would be very important to the success of the application, with a large image library consisting of thousands of images across three movies it had to be easy to navigate. Wireframes were created and iterated upon to ensure the users would have a navigation style that would work with all of the sites different use cases.',
     },
     testing: {
       topText:
-        'At the outset of the project we didn’t have a clear mission or specific goals for the pickup experience.Without pre-existing insights, I partnered with our researcher Shruti to explore how Riders were getting around.',
-      images: ['http://via.placeholder.com/3000x1500'],
+        'With a completed MVP we wanted to get real life data as soon as possible to validate our product design. Several iQmetrix clients were selected to participate in beta testing at 40 store locations across Canada and USA. The store staff we trained to think of the application as a customer relationship tool and not a marketing tool. This mindset would be crucial to growing relationships with customers through two way messaging. Staff were fast to adapt the application into their routines and began having conversations with customers on the very first day.',
+      images: [{ image: PrequelMemesAnalyticsImage1, caption: '' }],
       bottomText: '',
     },
     takeaway: {
       topText:
-        'At the outset of the project we didn’t have a clear mission or specific goals for the pickup experience.Without pre-existing insights, I partnered with our researcher Shruti to explore how Riders were getting around.',
-      images: ['http://via.placeholder.com/3000x1500'],
-      bottomText: 'Batman',
+        'During the test period the number of customer follow-ups completed via SMS were greatly more than the number voice call follow-ups. In addition to more follow-ups being completed, 45% of SMS follow-ups resulted in a conversation with the customer while voice calls only managed to generate a conversation 7% of the time. We discovered that as the reply ratio increased, the number of booked appointments also increased.',
+      images: [{ image: RqTakeawayImage1, caption: '' }],
+      bottomText: '',
     },
   },
   {
@@ -322,6 +367,50 @@ const portfolioItems = [
     title: 'Patio Builder',
     description: 'This is Patio Builder',
     image: PatioBuilderLogo,
+    link: 'PatioBuilder',
+    headerBlurb: {
+      blurbTitle: 'Beeline the man is bee',
+      blurb:
+        'In 2012, tapping a button to Uber across the city felt magical. By the start of 2016, this magic receded to a slew of disparate features that made the experience slow and complex to use. I was part of an ambitious project to redesign the Uber pickup experience for the fastest growing startup in history.',
+    },
+    projectInfo: {
+      client: 'Passion Project',
+      objective:
+        'VW aimed to transform technology within their enterprise. They established a digital labs in Berlin as an incubator for enabling lean mobile products that strengthened their community and brand.',
+      timeline: '6-8 weeks Development',
+      team: ['2 Product Designers', '1 Developer'],
+      role: 'I did this and this and this and this and this.',
+    },
+    kickOff: {
+      topText:
+        'At the outset of the project we didn’t have a clear mission or specific goals for the pickup experience.Without pre-existing insights, I partnered with our researcher Shruti to explore how Riders were getting around.',
+      images: ['http://via.placeholder.com/3000x1500'],
+      bottomText: 'Bottom text',
+    },
+    design: {
+      topText:
+        'At the outset of the project we didn’t have a clear mission or specific goals for the pickup experience.Without pre-existing insights, I partnered with our researcher Shruti to explore how Riders were getting around.',
+      images: ['http://via.placeholder.com/3000x1500'],
+      bottomText: '',
+    },
+    testing: {
+      topText:
+        'At the outset of the project we didn’t have a clear mission or specific goals for the pickup experience.Without pre-existing insights, I partnered with our researcher Shruti to explore how Riders were getting around.',
+      images: ['http://via.placeholder.com/3000x1500'],
+      bottomText: '',
+    },
+    takeaway: {
+      topText:
+        'At the outset of the project we didn’t have a clear mission or specific goals for the pickup experience.Without pre-existing insights, I partnered with our researcher Shruti to explore how Riders were getting around.',
+      images: ['http://via.placeholder.com/3000x1500'],
+      bottomText: 'Batman',
+    },
+  },
+  {
+    key: 7,
+    title: 'Portfolio',
+    description: 'This portfolio',
+    image: PortfolioLogo,
     link: 'PatioBuilder',
     headerBlurb: {
       blurbTitle: 'Beeline the man is bee',

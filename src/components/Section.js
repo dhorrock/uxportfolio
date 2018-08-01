@@ -40,6 +40,7 @@ const Content = styled.div`
   display: inline-block;
   color: black;
   margin: 10%;
+  max-width: 1200px;
 `;
 
 const Text = styled.p`

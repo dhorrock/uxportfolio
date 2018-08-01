@@ -8,6 +8,7 @@ import Beeline from './views/Beeline';
 import RQ from './views/Rq';
 import Ecodialer from './views/Ecodialer';
 import EndlessAisle from './views/EndlessAisle';
+import PrequelMemes from './views/PrequelMemes';
 import NavigationBar from './components/NavigationBar';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -33,6 +34,7 @@ class App extends Component {
             <Route exact path="/RQ" component={RQ} />
             <Route exact path="/ecodialer" component={Ecodialer} />
             <Route exact path="/EndlessAisle" component={EndlessAisle} />
+            <Route exact path="/PrequelMemes" component={PrequelMemes} />
             <Footer />
           </div>
         </Router>

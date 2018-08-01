@@ -6,7 +6,7 @@ class HeaderBlurb extends Component {
   render() {
     return (
       <View bgColor={this.props.bgColor}>
-        <Content>
+        <Content color={this.props.color}>
           <Title>{this.props.data.blurbTitle}</Title>
           <Text>{this.props.data.blurb}</Text>
         </Content>
@@ -27,19 +27,18 @@ const View = styled.div`
 const Content = styled.div`
   width: 80%;
   text-align: center;
-  color: white;
+  color: ${props => props.color}
+  max-width: 1000px;
 `;
 
 const Title = styled.h1`
   display: block;
   font-size: 4.875rem;
   line-height: 5.625rem;
-  margin-bottom: 2.25rem;
   text-transform: uppercase;
   @media (max-width: 767px) and (min-width: 0) {
     font-size: 3.438rem;
     line-height: 3.9375rem;
-    margin-bottom: 1.6875rem;
     text-transform: uppercase;
   }
 `;

@@ -27,7 +27,7 @@ class RQ extends Component {
   render() {
     return (
       <View>
-        <HeaderBlurb data={this.state.data.headerBlurb} bgColor={'#001e56'} />
+        <HeaderBlurb data={this.state.data.headerBlurb} bgColor={'#001e56'} color={'white'} />
         <ImageBar image={RqImageBar} />
         <ProjectInfo data={this.state.data.projectInfo} />
         <Section title={'KICKOFF'} data={this.state.data.kickOff} isDark />

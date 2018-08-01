@@ -55,6 +55,7 @@ const Content = styled.div`
   color: black;
   width: 80%;
   margin: 10%;
+  max-width: 800px;
 `;
 
 const Text = styled.p`
