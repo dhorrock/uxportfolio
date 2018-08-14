@@ -8,7 +8,7 @@ class HeaderBlurb extends Component {
       <View bgColor={this.props.bgColor}>
         <Content color={this.props.color}>
           <Title>{this.props.data.blurbTitle}</Title>
-          <Text>{this.props.data.blurb}</Text>
+          {this.props.data.blurb.map(blurb => <Text>{blurb}</Text>)}
         </Content>
       </View>
     );
@@ -28,7 +28,7 @@ const Content = styled.div`
   width: 80%;
   text-align: center;
   color: ${props => props.color}
-  max-width: 1000px;
+  max-width: 1200px;
 `;
 
 const Title = styled.h1`

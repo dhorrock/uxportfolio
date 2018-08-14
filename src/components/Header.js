@@ -8,22 +8,20 @@ class Header extends Component {
   render() {
     return (
       <View>
-        <Link to={'/'}>
-          <Lottie
-            options={{
-              loop: true,
-              autoplay: true,
-              animationData: animationData,
-              rendererSettings: {
-                preserveAspectRatio: 'xMidYMid slice',
-              },
-            }}
-            height={250}
-            width={200}
-            isStopped={false}
-            isPaused={false}
-          />
-        </Link>
+        <Lottie
+          options={{
+            loop: true,
+            autoplay: true,
+            animationData: animationData,
+            rendererSettings: {
+              preserveAspectRatio: 'xMidYMid slice',
+            },
+          }}
+          height={250}
+          width={200}
+          isStopped={false}
+          isPaused={false}
+        />
       </View>
     );
   }

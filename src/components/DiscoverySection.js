@@ -40,7 +40,7 @@ const Content = styled.div`
   width: 100%;
   color: black;
   margin: 10%;
-  max-width: 800px;
+  max-width: 1200px;
 `;
 
 const Text = styled.p`
@@ -72,6 +72,7 @@ const Title = styled.h2`
 
 const Image = styled.img`
   width: 100%;
+  max-width: 300px;
 `;
 
 const Cardview = styled.div`

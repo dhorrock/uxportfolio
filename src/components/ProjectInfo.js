@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 class ProjectInfo extends Component {
   render() {
@@ -29,6 +30,12 @@ class ProjectInfo extends Component {
             {this.props.data.role}
           </Text>
           <Text>
+            <strong>Link: </strong>
+            <Link target={'_blank'} to={this.props.data.link}>
+              <ALink>Open</ALink>
+            </Link>
+          </Text>
+          <Text>
             <Disclaimer>
               To comply with my non-disclosure agreement, I have omitted and obfuscated confidential information in this
               case study. All information in this case study is my own and does not necessarily reflect the views of
@@ -55,7 +62,7 @@ const Content = styled.div`
   color: black;
   width: 80%;
   margin: 10%;
-  max-width: 800px;
+  max-width: 1200px;
 `;
 
 const Text = styled.p`
@@ -93,6 +100,20 @@ const Disclaimer = styled.i`
   color: grey;
 `;
 
+const ALink = styled.a`
+  color: red;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+  @media (max-width: 767px) and (min-width: 0) {
+    margin-top: 1.125rem;
+    margin-bottom: 1.125rem;
+    font-size: 1.063rem;
+    line-height: 1.688rem;
+  }
+`;
+
 ProjectInfo.propTypes = {
   data: PropTypes.shape({
     client: PropTypes.string.isRequired,
@@ -100,6 +121,7 @@ ProjectInfo.propTypes = {
     timeline: PropTypes.string.isRequired,
     team: PropTypes.arrayOf(PropTypes.string).isRequired,
     role: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
   }).isRequired,
 };
 
