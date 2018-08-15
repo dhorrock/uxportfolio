@@ -235,7 +235,7 @@ const portfolioItems = [
       team: ['1 UX Designer (← me)', '4 Unity Developers', '2 Business Analysts', 'Project Manager'],
       role:
         'I created frameworks and prototypes to share the vision, design principles and content strategy. This helped to solidify ideas, gain alignment and drive decision making. I executed research, journeys, wireframes, prototypes and final design specs.',
-      link: 'http://www.prequelmemes.com',
+      link: 'http://www.canadiantire.ca/en/canvas-furniture-decor/canvas-outdoor-living/collections/canvas-tofino.html',
     },
     kickOff: {
       topText:
@@ -307,22 +307,21 @@ const portfolioItems = [
   {
     key: 5,
     title: 'WowVR',
-    description: 'The fast follow',
+    description: 'The fastest follow',
     image: WowVRLogo,
     link: 'WowVR',
     headerBlurb: {
       blurbTitle: 'WoW VR',
       blurb: [
-        "Whilst the hype and the success of Patio Builder was at it's peak, I was part of a fast-follow project tasked with the re-design and optimization of the in-store experience for mobile devices.",
+        "Whilst the hype and the success of Patio Builder was at it's peak, I was part of a fast-follow project tasked with the re-design and optimization of the Canadian Tire in-store experience for mobile devices.",
       ],
     },
     projectInfo: {
       client: 'Canadian Tire',
-      objective:
-        'The objective of this project was to re-design and port of the in-store Patio Builder to Android and iOS devices.',
+      objective: 'To bring the Patio Builder in-store experience to Android and iOS devices.',
       timeline: '3 months',
-      team: ['4 Unity Developers', 'UX Designer (← me)', 'Business Analyst'],
-      role: 'I was responsible for the re-design of the Patio Builder for mobile devices.',
+      team: ['4 Unity Developers', 'UX Designer (← me)', 'Business Analyst', 'Project Manager'],
+      role: 'I executed research, wireframes, prototypes and final design specs.',
       link: 'https://play.google.com/store/apps/details?id=com.canadiantire.wowvr&hl=en_CA',
     },
     kickOff: {
@@ -355,15 +354,16 @@ const portfolioItems = [
     design: {
       figma: 'http://www.google.ca/',
       topText:
-        "Low-fidelity wireframes and interactive prototypes were created to conduct usability testing with a small group of Canadian Tire customers. I created a short interview script and scheduled a small group of people to be interviewed over a short period of two days. Participants of the interviews were rewarded with Canadian Tire gift cards for their time. The feedback from these test sessions were key in ensuring the app was easy to use by Canadian Tire's wide age demographic.",
-      images: [{ image: WowVRDesignImage1, caption: 'Wireframes' }, { image: WowVRDesignImage2, caption: 'Finals' }],
+        'To begin the design process low-fidelity wireframes and interactive prototypes were created to conduct usability testing with a small group of Canadian Tire customers. I drafted a short interview script and scheduled a small group of people to be interviewed over a period of two days.',
+      images: [{ image: WowVRDesignImage1, caption: '' }],
       bottomText:
-        'Due to the mobile app being developed in a single codebase in Unity3D, this meant the app would only be able to follow one design standard; Material or iOS. Analytics for the Canadian Tire Retail App were checked to determine the more popular device platform. We verified that the Android platform was more popular with CTR users and went forward ensuring Google Material Design guidlines were followed.',
+        "The feedback from these test sessions were key in ensuring the app was easy, fun and useful for Canadian Tire's customers.",
     },
     testing: {
-      topText: 'Testing Text',
-      images: [{ image: 'http://via.placeholder.com/3000x1500', caption: 'image' }],
-      bottomText: 'Testing Text',
+      topText: '',
+      images: [{ image: WowVRDesignImage2, caption: '' }],
+      bottomText:
+        'Due to the mobile app being developed in a single codebase with the Unity3D game engine, this meant the app would only be able to follow one design standard; Material or iOS design. Analytics for the Canadian Tire Retail App were used to determine the more popular device platform. We verified that the Android platform was more popular with CTR users and went forward ensuring Google Material Design guidlines were followed.',
     },
     takeaway: {
       topText: 'Takeaway Text',
