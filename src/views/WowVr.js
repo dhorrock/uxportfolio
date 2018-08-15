@@ -7,15 +7,15 @@ import Section from '../components/Section';
 import DiscoverySection from '../components/DiscoverySection';
 import FooterNavigation from '../components/FooterNavigator';
 import ImageBar from '../components/ImageBar';
-import PatioBuilderImageBar from '../assets/PatioBuilder/PatioBuilder-ImageBar.jpg';
+import WowVRImageBar from '../assets/WowVR/WowVR-ImageBar.png';
 
-class PrequelMemes extends Component {
+class WowVR extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      data: data.find(item => item.title === 'Patio Builder'),
-      currentIndex: data.findIndex(item => item.title === 'Patio Builder'),
+      data: data.find(item => item.title === 'WowVR'),
+      currentIndex: data.findIndex(item => item.title === 'WowVR'),
     };
   }
   componentDidMount() {
@@ -27,14 +27,10 @@ class PrequelMemes extends Component {
   render() {
     return (
       <View>
-        <HeaderBlurb data={this.state.data.headerBlurb} bgColor={'#6e98b4'} color={'#FFF'} />
-        <ImageBar image={PatioBuilderImageBar} />
+        <HeaderBlurb data={this.state.data.headerBlurb} bgColor={'#D62832'} color={'#FFF'} />
+        <ImageBar image={WowVRImageBar} />
         <ProjectInfo data={this.state.data.projectInfo} />
-        <Section title={'KICKOFF'} data={this.state.data.kickOff} isDark />
-        <DiscoverySection data={this.state.data.discovery} isDark={false} />
-        <Section title={'BRAINSTORM'} data={this.state.data.design} isDark />
-        <Section title={'DESIGN'} data={this.state.data.testing} isDark={false} />
-        <Section title={'LAUNCH'} data={this.state.data.takeaway} isDark />
+        <Section title={'DESIGN'} data={this.state.data.design} isDark={false} />
         <FooterNavigation currentIndex={this.state.currentIndex} />
       </View>
     );
@@ -44,4 +40,4 @@ class PrequelMemes extends Component {
 const View = styled.div`
   display: block;
 `;
-export default PrequelMemes;
+export default WowVR;

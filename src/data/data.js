@@ -3,7 +3,6 @@ import ecodialerLogo from '../assets/ecodialer/ecodialer-PortfolioItemLogoA.svg'
 import EndlessAisleLogo from '../assets/EndlessAisle/Endless-Aisle-PortfolioItemLogoA.svg';
 import WowVRLogo from '../assets/WowVR/WowVR-PortfolioItemLogoA.svg';
 import PrequelMemesLogo from '../assets/PrequelMemes/PrequelMemes-PortfolioItemLogoA.svg';
-
 import PortfolioLogo from '../assets/Portfolio/Portfolio-PortfolioItemLogoA.svg';
 
 //PM
@@ -12,7 +11,7 @@ import PrequelMemesKickOffImage2 from '../assets/PrequelMemes/PrequelMemes-KickO
 import PrequelMemesDesignImage1 from '../assets/PrequelMemes/PrequelMemes-DesignImage2.svg';
 import PrequelMemesDesignImage2 from '../assets/PrequelMemes/PrequelMemes-DesignImage1.svg';
 import PrequelMemesDesignImage3 from '../assets/PrequelMemes/PrequelMemes-DesignImage3.png';
-import PrequelMemesAnalyticsImage1 from '../assets/PrequelMemes/PrequelMemes-Analytics1.svg';
+import PrequelMemesAnalyticsImage1 from '../assets/PrequelMemes/PrequelMemes-Analytics2.svg';
 import PrequelMemesTakeawayImage1 from '../assets/PrequelMemes/PrequelMemes-TakeawayImage1.jpg';
 import PrequelMemesDiscoveryImage1 from '../assets/PrequelMemes/PrequelMemes-DiscoveryImage1.svg';
 import PrequelMemesDiscoveryImage2 from '../assets/PrequelMemes/PrequelMemes-DiscoveryImage2.svg';
@@ -30,6 +29,7 @@ import RqDiscoveryImage3 from '../assets/Rq/Rq-DiscoveryImage3.svg';
 import RqDiscoveryImage4 from '../assets/Rq/Rq-DiscoveryImage4.svg';
 import RqDesignImage1 from '../assets/Rq/Rq-DesignImage1.svg';
 import RqDesignImage2 from '../assets/Rq/Rq-DesignImage2.svg';
+import RqDesignImage3 from '../assets/Rq/Rq-DesignImage3.png';
 import RqBetaImage1 from '../assets/Rq/Rq-BetaImage1.svg';
 import RqTakeawayImage1 from '../assets/Rq/Rq-TakeawayImage1.svg';
 
@@ -47,6 +47,10 @@ import PatioBuilderDesignImage5 from '../assets/PatioBuilder/PatioBuilder-Design
 import PatioBuilderTakeawayImage1 from '../assets/PatioBuilder/PatioBuilder-TakeAwayImage1.jpg';
 import PatioBuilderTakeawayImage2 from '../assets/PatioBuilder/PatioBuilder-TakeAwayImage2.jpg';
 
+//WowVR
+import WowVRDesignImage1 from '../assets/WowVR/WowVR-DesignImage1.png';
+import WowVRDesignImage2 from '../assets/WowVR/WowVR-DesignImage2.jpg';
+
 const portfolioItems = [
   {
     key: 0,
@@ -57,7 +61,7 @@ const portfolioItems = [
     headerBlurb: {
       blurbTitle: 'RQ',
       blurb: [
-        'Customer follow-ups are an integral component of doing business, but does anyone answer phone calls anymore? I was part of an ambitious project to redesign and evolve the customer follow-up experiece for the largest POS system in the wireless market.',
+        'Customer follow-ups are an integral component of doing business, but does anyone answer phone calls anymore? I was part of an ambitious project to re-design and evolve the customer follow-up experiece for the largest POS system in the wireless market.',
       ],
     },
     projectInfo: {
@@ -110,7 +114,11 @@ const portfolioItems = [
       figma: 'http://www.google.ca/',
       topText:
         'By identifying the tensions of conducting customer follow-ups via voice calls, it became clear that a messaging system could ideally alleviate these tensions and make it easier for both customers and retailers to communicate with each other. We decided to test this concept with a prototype that would provide the option of conducting customer follow-ups via messaging or by voice.',
-      images: [{ image: RqDesignImage1, caption: '' }, { image: RqDesignImage2, caption: '' }],
+      images: [
+        { image: RqDesignImage1, caption: 'Wireframes' },
+        { image: RqDesignImage2, caption: 'Desktop' },
+        { image: RqDesignImage3, caption: 'Mobile' },
+      ],
       bottomText:
         "In order to validate our ideas, a MVP prototype would be created and tested in stores to gather real-world insights. To get this prototype made quickly I decided to use Google's Material Design design components, enabling the front-end to come together much faster than a custom UI. ",
     },
@@ -131,7 +139,7 @@ const portfolioItems = [
   {
     key: 4,
     title: 'Prequel Memes',
-    description: 'Increasing participation',
+    description: 'Increasing user participation',
     image: PrequelMemesLogo,
     link: 'PrequelMemes',
     headerBlurb: {
@@ -196,13 +204,13 @@ const portfolioItems = [
     },
     testing: {
       topText:
-        'Google Analytics are currently being utilized to monitor user behaviour and user engagement. Since launch the application has a Bounce Rate of 0.95% with an average user session duration of 3:18. This is very encouraging and positive reception. However the analytic data also indicates a low amount of return users (9.3%). This will be the focus of the project over the coming months. ',
-      images: [{ image: PrequelMemesAnalyticsImage1, caption: '' }],
+        'Google Analytics are currently being utilized to monitor user behaviour and user engagement. Since launch the application has a Bounce Rate of 0.52% with an average user session duration of 2:03. This is very encouraging and positive reception. However the analytic data also indicates a low amount of return users (6.7%). This will be the focus of the project over the coming months. ',
+      images: [{ image: PrequelMemesAnalyticsImage1, caption: 'August 7 - August 13 2018' }],
       bottomText: '',
     },
     takeaway: {
       topText:
-        'Analysis, research, and interviews with the users of the reddit Star Wars community proved to be valuable asset in creating this web application. At the time of writing this 2,964 memes have been created and shared across a variety of social media platforms. Since the launch of prequelmemes.com, the Reddit Star Wars community has promoted it as the official content tool for its users. Prequel Memes continues to help users around the planet in their quest to create hilarious Star Wars memes.',
+        'Analysis, research, and interviews with the users of the reddit Star Wars community proved to be valuable asset in creating this web application. At the time of writing this more than 3,000 memes have been created and shared across a variety of social media platforms. Since the launch of prequelmemes.com, the Reddit Star Wars community has promoted it as the official content tool for its users. Prequel Memes continues to help users around the planet in their quest to create hilarious Star Wars memes.',
       images: [{ image: PrequelMemesTakeawayImage1, caption: '' }],
       bottomText: '',
     },
@@ -210,7 +218,7 @@ const portfolioItems = [
   {
     key: 6,
     title: 'Patio Builder',
-    description: '*Coming Soon*',
+    description: 'Maximizing small spaces',
     image: PatioBuilderLogo,
     link: 'PatioBuilder',
     headerBlurb: {
@@ -287,12 +295,80 @@ const portfolioItems = [
         'Initally the user experience gave users a selction of three different static camera perspectives that they could view their patio designs from. However in usability testing it was discovered this design was limiting for users who spent time creating a patio design. They wanted to be able to explore the space and their selected products. To address this a heads-up-display(HUD) was included in the design to drive the in-game movement system, giving users fully responsive controls to explore their digital backyard designs with a virtual joystick. ',
     },
     takeaway: {
-      topText: 'Top',
+      topText:
+        'Patio Builder was rolled-out in May of 2015 and was positively recieved by Canadian Tire customers. The Patio Builder’s combination of functionality and simplicity provides customers with the tools to create backyard experiences in a few simple steps. The experience launched with a host of ready-made backyard designs which can be personalized by adding BBQs, tables, fireplaces and seating arrangements. Patio Builder also included curated media content on product knowledge, design inspiration, and current design trends in outdoor furniture. ',
       images: [
-        { image: PatioBuilderTakeawayImage1, caption: 'Me (Hamming it up)' },
-        { image: PatioBuilderTakeawayImage2, caption: 'Store roll-out' },
+        { image: PatioBuilderTakeawayImage1, caption: 'Store roll-out' },
+        { image: PatioBuilderTakeawayImage2, caption: 'Me & Patio Builder (Hamming it up)' },
       ],
-      bottomText: 'Bottom',
+      bottomText: '',
+    },
+  },
+  {
+    key: 5,
+    title: 'WowVR',
+    description: 'The fast follow',
+    image: WowVRLogo,
+    link: 'WowVR',
+    headerBlurb: {
+      blurbTitle: 'WoW VR',
+      blurb: [
+        "Whilst the hype and the success of Patio Builder was at it's peak, I was part of a fast-follow project tasked with the re-design and optimization of the in-store experience for mobile devices.",
+      ],
+    },
+    projectInfo: {
+      client: 'Canadian Tire',
+      objective:
+        'The objective of this project was to re-design and port of the in-store Patio Builder to Android and iOS devices.',
+      timeline: '3 months',
+      team: ['4 Unity Developers', 'UX Designer (← me)', 'Business Analyst'],
+      role: 'I was responsible for the re-design of the Patio Builder for mobile devices.',
+      link: 'https://play.google.com/store/apps/details?id=com.canadiantire.wowvr&hl=en_CA',
+    },
+    kickOff: {
+      topText: 'Kick off Text',
+      images: [{ image: 'http://via.placeholder.com/3000x1500', caption: '' }],
+      bottomText: '',
+    },
+    discovery: [
+      {
+        title: '1.',
+        blurb: 'Discovery text.',
+        image: 'http://via.placeholder.com/300x300',
+      },
+      {
+        title: '2.',
+        blurb: 'Discovery text.',
+        image: 'http://via.placeholder.com/300x300',
+      },
+      {
+        title: '3.',
+        blurb: 'Discovery text.',
+        image: 'http://via.placeholder.com/300x300',
+      },
+      {
+        title: '4.',
+        blurb: 'Discovery text.',
+        image: 'http://via.placeholder.com/300x300',
+      },
+    ],
+    design: {
+      figma: 'http://www.google.ca/',
+      topText:
+        "Low-fidelity wireframes and interactive prototypes were created to conduct usability testing with a small group of Canadian Tire customers. I created a short interview script and scheduled a small group of people to be interviewed over a short period of two days. Participants of the interviews were rewarded with Canadian Tire gift cards for their time. The feedback from these test sessions were key in ensuring the app was easy to use by Canadian Tire's wide age demographic.",
+      images: [{ image: WowVRDesignImage1, caption: 'Wireframes' }, { image: WowVRDesignImage2, caption: 'Finals' }],
+      bottomText:
+        'Due to the mobile app being developed in a single codebase in Unity3D, this meant the app would only be able to follow one design standard; Material or iOS. Analytics for the Canadian Tire Retail App were checked to determine the more popular device platform. We verified that the Android platform was more popular with CTR users and went forward ensuring Google Material Design guidlines were followed.',
+    },
+    testing: {
+      topText: 'Testing Text',
+      images: [{ image: 'http://via.placeholder.com/3000x1500', caption: 'image' }],
+      bottomText: 'Testing Text',
+    },
+    takeaway: {
+      topText: 'Takeaway Text',
+      images: [{ image: 'http://via.placeholder.com/3000x1500', caption: 'image' }],
+      bottomText: 'Take Away Text',
     },
   },
   {
@@ -481,69 +557,6 @@ const portfolioItems = [
       bottomText: 'Take Away Text',
     },
   },
-  {
-    key: 5,
-    title: 'WowVR',
-    description: '*Coming Soon*',
-    image: WowVRLogo,
-    link: 'ComingSoon',
-    headerBlurb: {
-      blurbTitle: 'Title',
-      blurb: ['Header text'],
-    },
-    projectInfo: {
-      client: 'Client',
-      objective: 'Objective',
-      timeline: 'X months',
-      team: ['Team member', 'Team member (← me)', 'Team member', 'Team member', 'Team member'],
-      role: 'My Role',
-      link: 'https://www.google.ca',
-    },
-    kickOff: {
-      topText: 'Kick off Text',
-      images: [{ image: 'http://via.placeholder.com/3000x1500', caption: 'Image' }],
-      bottomText: '',
-    },
-    discovery: [
-      {
-        title: '1.',
-        blurb: 'Discovery text.',
-        image: 'http://via.placeholder.com/300x300',
-      },
-      {
-        title: '2.',
-        blurb: 'Discovery text.',
-        image: 'http://via.placeholder.com/300x300',
-      },
-      {
-        title: '3.',
-        blurb: 'Discovery text.',
-        image: 'http://via.placeholder.com/300x300',
-      },
-      {
-        title: '4.',
-        blurb: 'Discovery text.',
-        image: 'http://via.placeholder.com/300x300',
-      },
-    ],
-    design: {
-      figma: 'http://www.google.ca/',
-      topText: 'Design Text',
-      images: [{ image: 'http://via.placeholder.com/3000x1500', caption: 'image' }],
-      bottomText: 'Design Text ',
-    },
-    testing: {
-      topText: 'Testing Text',
-      images: [{ image: 'http://via.placeholder.com/3000x1500', caption: 'image' }],
-      bottomText: 'Testing Text',
-    },
-    takeaway: {
-      topText: 'Takeaway Text',
-      images: [{ image: 'http://via.placeholder.com/3000x1500', caption: 'image' }],
-      bottomText: 'Take Away Text',
-    },
-  },
-
   {
     key: 7,
     title: 'Portfolio',
