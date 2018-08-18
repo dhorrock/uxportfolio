@@ -72,7 +72,8 @@ const Title = styled.h2`
 
 const Image = styled.img`
   width: 100%;
-  max-width: 300px;
+  max-width: 340px;
+  align-self: center;
 `;
 
 const Cardview = styled.div`
@@ -83,10 +84,13 @@ const Cardview = styled.div`
 `;
 
 const Card = styled.div`
+  display: block;
   width: 46%;
   margin: 2%;
   @media (max-width: 767px) and (min-width: 0) {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 `;
 

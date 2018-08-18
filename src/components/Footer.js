@@ -7,7 +7,7 @@ class Footer extends Component {
     return (
       <View>
         <ContactInfo>
-          <Link target="blank" to={'https://uptowork.com/mycv/dhorrock'}>
+          <Link target="blank" to={'https://zety.com/mycv/dustinhorrock'}>
             <GridItem>
               <Text>Resume</Text>
             </GridItem>
