@@ -35,7 +35,6 @@ import RqTakeawayImage1 from '../assets/Rq/Rq-TakeawayImage1.svg';
 
 //PATIOBUILDER
 import PatioBuilderLogo from '../assets/PatioBuilder/PatioBuilder-PortfolioItemLogoA.svg';
-import PatioBuilderTakeAwayImage1 from '../assets/PatioBuilder/PatioBuilder-ImageBar.jpg';
 import PatioBuilderKickOffImage1 from '../assets/PatioBuilder/PatioBuilder-KickOffImage1.svg';
 import PatioBuilderKickOffImage2 from '../assets/PatioBuilder/PatioBuilder-KickOffImage2.svg';
 import PatioBuilderDiscoveryImage2 from '../assets/PatioBuilder/PatioBulder-DiscoveryImage2-01.svg';
@@ -51,6 +50,12 @@ import PatioBuilderTakeawayImage2 from '../assets/PatioBuilder/PatioBuilder-Take
 import WowVRDesignImage1 from '../assets/WowVR/WowVR-DesignImage1.png';
 import WowVRDesignImage2 from '../assets/WowVR/WowVR-DesignImage2.jpg';
 
+//BEELINE
+import BeelineDesignImage1 from '../assets/Beeline/Beeline-DesignImage1.svg';
+import BeelineDesignImage2 from '../assets/Beeline/Beeline-DesignImage2.svg';
+import BeelineDesignImage3 from '../assets/Beeline/Beeline-DesignImage3.svg';
+import BeelineDesignImage4 from '../assets/Beeline/Beeline-DesignImage4.png';
+
 const portfolioItems = [
   {
     key: 0,
@@ -61,7 +66,7 @@ const portfolioItems = [
     headerBlurb: {
       blurbTitle: 'RQ',
       blurb: [
-        'Customer follow-ups are an integral component of doing business, but does anyone answer phone calls anymore? I was part of an ambitious project to re-design and evolve the customer follow-up experiece for the largest POS system in the wireless market.',
+        'Customer follow-ups are an integral component of doing business, but does anyone answer phone calls anymore? I was part of an ambitious project to re-design and evolve the customer follow-up experience for the largest POS system in the wireless market.',
       ],
     },
     projectInfo: {
@@ -372,25 +377,28 @@ const portfolioItems = [
     },
   },
   {
-    key: 0,
-    title: 'Endless Aisle',
-    description: '*Coming Soon*',
-    image: EndlessAisleLogo,
-    link: 'ComingSoon',
+    key: 2,
+    title: 'Beeline',
+    description: 'Efficient driving',
+    image: BeelineLogo,
+    link: 'Beeline',
     headerBlurb: {
-      blurbTitle: 'Endless Aisle',
-      blurb: ['Header text'],
+      blurbTitle: 'Beeline',
+      blurb: [
+        'When it comes to making deliveries, the optimal route to your destinations saves a lot of time and and fuel—lowering costs and emissions. You’ll make faster deliveries, increasing productivity and customer satisfaction. I took on the task to improve the route planning process and create a solution to make multiple stops a breeze.',
+      ],
     },
     projectInfo: {
-      client: 'Client',
-      objective: 'Objective',
-      timeline: 'X months',
-      team: ['Team member', 'Team member (← me)', 'Team member', 'Team member', 'Team member'],
-      role: 'My Role',
-      link: 'https://www.google.ca',
+      client: 'Clear Spring Ice Delivery / Personal Development',
+      objective:
+        'Create a tool that accepts multiple addresses to generate the optimal delivery route, simplifying the route planning process and making it an easier for delivery drivers to do their jobs.',
+      timeline: '1 month',
+      team: ['2 UX Designers (← me)', 'React Native/Redux Developer (← me)'],
+      role: 'I was a designer and the developer of the project.',
+      link: 'https://itunes.apple.com/us/app/beeline/id1372586745?mt=8',
     },
     kickOff: {
-      topText: 'Kick off Text',
+      topText: 'First step was to see how they were currently doing their routes',
       images: [{ image: 'http://via.placeholder.com/3000x1500', caption: 'Image' }],
       bottomText: '',
     },
@@ -418,29 +426,35 @@ const portfolioItems = [
     ],
     design: {
       figma: 'http://www.google.ca/',
-      topText: 'Design Text',
-      images: [{ image: 'http://via.placeholder.com/3000x1500', caption: 'image' }],
-      bottomText: 'Design Text ',
+      topText:
+        'Low fidelity designs were created to visually communicate the concepts with users to generate feedback. This allowed users to be involved early in the design process with quick low-fi prototypes.',
+      images: [{ image: BeelineDesignImage2, caption: '' }],
+      bottomText:
+        'These wireframes were used to uncover any usability issues and validate design decisions based on user reactions.',
     },
     testing: {
-      topText: 'Testing Text',
-      images: [{ image: 'http://via.placeholder.com/3000x1500', caption: 'image' }],
-      bottomText: 'Testing Text',
+      topText:
+        'We began exploring possible visual styles for the app as the user experience was being finalized. The visual language for the app and branding were finalized in these brainstorming sessions through experimentation.',
+      images: [
+        { image: BeelineDesignImage3, caption: '' },
+        { image: BeelineDesignImage1, caption: 'Design Experimentation' },
+      ],
+      bottomText: '',
     },
     takeaway: {
-      topText: 'Takeaway Text',
-      images: [{ image: 'http://via.placeholder.com/3000x1500', caption: 'image' }],
-      bottomText: 'Take Away Text',
+      topText: 'After some minor design feedback the final designs were locked in and Beeline was ready to go!',
+      images: [{ image: BeelineDesignImage4, caption: '' }],
+      bottomText: '',
     },
   },
   {
-    key: 2,
-    title: 'Beeline',
+    key: 0,
+    title: 'Endless Aisle',
     description: '*Coming Soon*',
-    image: BeelineLogo,
+    image: EndlessAisleLogo,
     link: 'ComingSoon',
     headerBlurb: {
-      blurbTitle: 'Title',
+      blurbTitle: 'Endless Aisle',
       blurb: ['Header text'],
     },
     projectInfo: {

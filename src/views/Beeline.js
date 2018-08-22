@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import HeaderBlurb from '../components/HeaderBlurb';
 import ProjectInfo from '../components/ProjectInfo';
 import data from '../data/data';
-import BeelineImageBar from '../assets/Beeline/Beeline-ImageBar.svg';
+import BeelineImageBar from '../assets/Beeline/Beeline-ImageBara.svg';
 import Section from '../components/Section';
 import FooterNavigation from '../components/FooterNavigator';
 import ImageBar from '../components/ImageBar';
@@ -24,13 +24,12 @@ class Beeline extends Component {
   render() {
     return (
       <View>
-        <HeaderBlurb data={this.state.data.headerBlurb} bgColor={'#1a1e23'} />
+        <HeaderBlurb data={this.state.data.headerBlurb} bgColor={'#9B51E0'} color={'#FFF'} />
         <ImageBar image={BeelineImageBar} />
         <ProjectInfo data={this.state.data.projectInfo} />
-        <Section title={'KICKOFF'} data={this.state.data.kickOff} isDark />
-        <Section title={'DESIGN'} data={this.state.data.design} isDark={false} />
-        <Section title={'TESTING'} data={this.state.data.testing} isDark />
-        <Section title={'TAKEAWAY'} data={this.state.data.takeaway} isDark={false} />
+        <Section title={'WIREFRAMES'} data={this.state.data.design} isDark />
+        <Section title={'DESIGN'} data={this.state.data.testing} isDark={false} />
+        <Section title={'FINAL'} data={this.state.data.takeaway} isDark={false} />
         <FooterNavigation currentIndex={this.state.currentIndex} />
       </View>
     );

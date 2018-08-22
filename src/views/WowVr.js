@@ -4,7 +4,6 @@ import HeaderBlurb from '../components/HeaderBlurb';
 import ProjectInfo from '../components/ProjectInfo';
 import data from '../data/data';
 import Section from '../components/Section';
-import DiscoverySection from '../components/DiscoverySection';
 import FooterNavigation from '../components/FooterNavigator';
 import ImageBar from '../components/ImageBar';
 import WowVRImageBar from '../assets/WowVR/WowVR-ImageBar.png';

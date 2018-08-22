@@ -6,7 +6,6 @@ import Home from './views/Home';
 import About from './views/About';
 import Beeline from './views/Beeline';
 import RQ from './views/Rq';
-import Ecodialer from './views/Ecodialer';
 import EndlessAisle from './views/EndlessAisle';
 import PrequelMemes from './views/PrequelMemes';
 import PatioBuilder from './views/PatioBuilder';
@@ -35,7 +34,6 @@ class App extends Component {
             <Route exact path="/About" component={About} />
             <Route exact path="/Beeline" component={Beeline} />
             <Route exact path="/RQ" component={RQ} />
-            <Route exact path="/ecodialer" component={Ecodialer} />
             <Route exact path="/EndlessAisle" component={EndlessAisle} />
             <Route exact path="/PrequelMemes" component={PrequelMemes} />
             <Route exact path="/PatioBuilder" component={PatioBuilder} />
