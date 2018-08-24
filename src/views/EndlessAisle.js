@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import HeaderBlurb from '../components/HeaderBlurb';
 import ProjectInfo from '../components/ProjectInfo';
 import data from '../data/data';
-import BeelineImageBar from '../assets/Beeline/Beeline-ImageBar.svg';
+import EndlessAisleImageBar from '../assets/EndlessAisle/Endless-Aisle-ImageBar.jpg';
 import Section from '../components/Section';
 import FooterNavigation from '../components/FooterNavigator';
 import ImageBar from '../components/ImageBar';
@@ -22,13 +22,14 @@ class EndlessAisle extends Component {
   render() {
     return (
       <View>
-        <HeaderBlurb data={this.state.data.headerBlurb} bgColor={'#1a1e23'} />
-        <ImageBar image={BeelineImageBar} />
+        <HeaderBlurb data={this.state.data.headerBlurb} bgColor={'#0094DA'} color={'white'} />
+        <ImageBar image={EndlessAisleImageBar} />
         <ProjectInfo data={this.state.data.projectInfo} />
         <Section title={'KICKOFF'} data={this.state.data.kickOff} isDark />
-        <Section title={'DESIGN'} data={this.state.data.design} isDark={false} />
-        <Section title={'TESTING'} data={this.state.data.testing} isDark />
-        <Section title={'TAKEAWAY'} data={this.state.data.takeaway} isDark={false} />
+        <Section title={'Iteration 1'} data={this.state.data.design} isDark={false} />
+        <Section title={'Iteration 2'} data={this.state.data.testing} isDark />
+        <Section title={'Final Iteration'} data={this.state.data.takeaway} isDark={false} />
+        <Section title={'Take Away'} data={this.state.data.extra} isDark />
         <FooterNavigation currentIndex={this.state.currentIndex} />
       </View>
     );

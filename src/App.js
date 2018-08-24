@@ -9,6 +9,7 @@ import RQ from './views/Rq';
 import EndlessAisle from './views/EndlessAisle';
 import PrequelMemes from './views/PrequelMemes';
 import PatioBuilder from './views/PatioBuilder';
+import Portfolio from './views/Portfolio';
 import ComingSoon from './views/ComingSoon';
 import WowVR from './views/WowVr';
 import NavigationBar from './components/NavigationBar';
@@ -38,6 +39,7 @@ class App extends Component {
             <Route exact path="/PrequelMemes" component={PrequelMemes} />
             <Route exact path="/PatioBuilder" component={PatioBuilder} />
             <Route exact path="/WowVR" component={WowVR} />
+            <Route exact path="/Portfolio" component={Portfolio} />
             <Route exact path="/ComingSoon" component={ComingSoon} />
             <Footer />
           </div>

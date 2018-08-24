@@ -2,5 +2,5 @@
 
 yarn run build
 mv build/index.html build/200.html
-surge build djho.surge.sh
+surge build dustin.surge.sh
 yarn start

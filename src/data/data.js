@@ -1,11 +1,5 @@
-import BeelineLogo from '../assets/Beeline/Beeline-PortfolioItemLogoA.svg';
-import ecodialerLogo from '../assets/ecodialer/ecodialer-PortfolioItemLogoA.svg';
-import EndlessAisleLogo from '../assets/EndlessAisle/Endless-Aisle-PortfolioItemLogoA.svg';
-import WowVRLogo from '../assets/WowVR/WowVR-PortfolioItemLogoA.svg';
-import PrequelMemesLogo from '../assets/PrequelMemes/PrequelMemes-PortfolioItemLogoA.svg';
-import PortfolioLogo from '../assets/Portfolio/Portfolio-PortfolioItemLogoA.svg';
-
 //PM
+import PrequelMemesLogo from '../assets/PrequelMemes/PrequelMemes-PortfolioItemLogoA.svg';
 import PrequelMemesKickOffImage1 from '../assets/PrequelMemes/PrequelMemes-KickOffImage1.svg';
 import PrequelMemesKickOffImage2 from '../assets/PrequelMemes/PrequelMemes-KickOffImage2.svg';
 import PrequelMemesDesignImage1 from '../assets/PrequelMemes/PrequelMemes-DesignImage2.svg';
@@ -47,14 +41,31 @@ import PatioBuilderTakeawayImage1 from '../assets/PatioBuilder/PatioBuilder-Take
 import PatioBuilderTakeawayImage2 from '../assets/PatioBuilder/PatioBuilder-TakeAwayImage2.jpg';
 
 //WowVR
+import WowVRLogo from '../assets/WowVR/WowVR-PortfolioItemLogoA.svg';
 import WowVRDesignImage1 from '../assets/WowVR/WowVR-DesignImage1.png';
 import WowVRDesignImage2 from '../assets/WowVR/WowVR-DesignImage2.jpg';
 
 //BEELINE
+import BeelineLogo from '../assets/Beeline/Beeline-PortfolioItemLogoA.svg';
 import BeelineDesignImage1 from '../assets/Beeline/Beeline-DesignImage1.svg';
 import BeelineDesignImage2 from '../assets/Beeline/Beeline-DesignImage2.svg';
 import BeelineDesignImage3 from '../assets/Beeline/Beeline-DesignImage3.svg';
 import BeelineDesignImage4 from '../assets/Beeline/Beeline-DesignImage4.png';
+
+//ENDLESS AISLE
+import EndlessAisleLogo from '../assets/EndlessAisle/Endless-Aisle-PortfolioItemLogoA.svg';
+import EndlessAisleKickoffImage1 from '../assets/EndlessAisle/Endless-Aisle-KickoffImage1.svg';
+import EndlessAisleKickoffImage2 from '../assets/EndlessAisle/Endless-Aisle-KickoffImage2.svg';
+import EndlessAisleDesignImage1 from '../assets/EndlessAisle/Endless-Aisle-DesignImage1.png';
+import EndlessAisleDesignImage2 from '../assets/EndlessAisle/Endless-Aisle-DesignImage2.png';
+import EndlessAisleDesignImage3 from '../assets/EndlessAisle/Endless-Aisle-DesignImage3.png';
+
+//PORTFOLIO
+import PortfolioLogo from '../assets/Portfolio/Portfolio-PortfolioItemLogoA.svg';
+import PortfolioDesignImage1 from '../assets/Portfolio/Portfolio-DesignImage1';
+
+//ECODIALER
+import ecodialerLogo from '../assets/ecodialer/ecodialer-PortfolioItemLogoA.svg';
 
 const portfolioItems = [
   {
@@ -377,6 +388,90 @@ const portfolioItems = [
     },
   },
   {
+    key: 0,
+    title: 'Endless Aisle',
+    description: 'Invisible Text',
+    image: EndlessAisleLogo,
+    link: 'EndlessAisle',
+    headerBlurb: {
+      blurbTitle: 'Endless Aisle',
+      blurb: [
+        'iQmetrix retail clients were seeing a number of abandoned shopping carts on Endless Aisle. I was part of a team to discover why this was happening and work with store staff and customers to find a solution.',
+      ],
+    },
+    projectInfo: {
+      client: 'iQmetrix',
+      objective:
+        ' To discover a way to build customer awareness and confidence in using Endless Aisle to complete their purchases.',
+      timeline: '2017 - Ongoing',
+      team: ['UX Researcher', 'UX Designer (← me)', 'Visual Designer'],
+      role: 'I worked with the design team through two sprints, conducting tests with users.',
+      link: 'https://www.iqmetrix.com/products/endless-aisle',
+    },
+    kickOff: {
+      topText:
+        'Based on initial user research, we understood that customers didn’t expect to be able to make purchases using Endless Aisle, due to two major factors:',
+      images: [
+        { image: EndlessAisleKickoffImage1, caption: 'The two major factors' },
+        { image: EndlessAisleKickoffImage2, caption: '' },
+      ],
+      bottomText:
+        'Endless Aisle’s offers a unique product purchase flow that provides value to retail customers by integrating quickly and easily into existing store setups. However, this easy integration comes at the cost of a customer experience challenge. We suspected that customers were abandoning their carts because they didn’t understand how the Endless Aisle flow worked. Instead of pushing ahead and hoping they’d figure it out, customers would walk away. Customers have explicit goals in mind: they want to buy something. It’s easier to do the way you already know how. We needed to quickly validate our hunch and find a solution that would make customers feel confident completing their purchase with Endless Aisle.',
+    },
+    discovery: [
+      {
+        title: '1.',
+        blurb: 'Discovery text.',
+        image: 'http://via.placeholder.com/300x300',
+      },
+      {
+        title: '2.',
+        blurb: 'Discovery text.',
+        image: 'http://via.placeholder.com/300x300',
+      },
+      {
+        title: '3.',
+        blurb: 'Discovery text.',
+        image: 'http://via.placeholder.com/300x300',
+      },
+      {
+        title: '4.',
+        blurb: 'Discovery text.',
+        image: 'http://via.placeholder.com/300x300',
+      },
+    ],
+    design: {
+      figma: 'http://www.google.ca/',
+      topText:
+        'In this iteration, we presented a simple modal with 3 steps written out. To continue, the user taps a call to action button that said “Let’s shop.”',
+      images: [{ image: EndlessAisleDesignImage1, caption: "Let's shop" }],
+      bottomText:
+        'The moment the modal popped up, participants would tap the button. We didn’t know anyone that could read that fast. Clearly, users weren’t reading the modal.',
+    },
+    testing: {
+      topText:
+        'For the second iteration, we used the same modal with the same 3 steps, but we replaced the call to action text with the message “I understand.”,',
+
+      images: [{ image: EndlessAisleDesignImage2, caption: 'I Understand' }],
+      bottomText:
+        'This change slowed everyone down. People would go to tap it and pause. Some voiced, “What am I agreeing to?” They would scan the 3 steps, then proceed with tapping the button. When they opened the cart and went to hit “Checkout Now,” we asked them what they thought would happen next. Based on what we heard, it appeared as though they skimmed the 3 steps, but it didn’t stick with them.',
+    },
+    takeaway: {
+      topText:
+        'Based on our latest iteration, we determined that the copy needed to be skimmable, but it also needed to stick. We cut the messaging down to two steps that focused on the two key points of information: you shop here, you pay there.',
+      images: [{ image: EndlessAisleDesignImage3, caption: 'Two Steps' }],
+      bottomText:
+        'This iteration resulted in a notable jump in confidence levels. Participants correctly predicted their next steps, and didn’t doubt themselves or Endless Aisle. Finally, the process was concise and clear.',
+    },
+    extra: {
+      topText:
+        'After only a few days of testing, we had a clear and effective solution to a specific user pain point. We refined the messaging for the “Checkout at register” flow to just two concise sentences that customers could skim and understand in a heartbeat. The design team refined the user interface design and rolled it out in the next development sprint.',
+      images: [],
+      bottomText:
+        'As UX professionals, we’ve all heard that “People don’t read.” It’s another thing to see the evidence with your own eyes. When people are action-oriented, they will dismiss anything that gets in their way. Even if the user is stuck on a screen long enough to read it, we can’t anticipate that they will remember what they saw.',
+    },
+  },
+  {
     key: 2,
     title: 'Beeline',
     description: 'Efficient driving',
@@ -448,22 +543,24 @@ const portfolioItems = [
     },
   },
   {
-    key: 0,
-    title: 'Endless Aisle',
-    description: '*Coming Soon*',
-    image: EndlessAisleLogo,
-    link: 'ComingSoon',
+    key: 7,
+    title: 'Portfolio',
+    description: 'The meta',
+    image: PortfolioLogo,
+    link: 'Portfolio',
     headerBlurb: {
-      blurbTitle: 'Endless Aisle',
-      blurb: ['Header text'],
+      blurbTitle: 'Portfolio',
+      blurb: [
+        'Using only ReactJS and my bare hands, I set out to create a portfolio from the ground up that could demonstrate my design and my development skills.',
+      ],
     },
     projectInfo: {
-      client: 'Client',
-      objective: 'Objective',
-      timeline: 'X months',
-      team: ['Team member', 'Team member (← me)', 'Team member', 'Team member', 'Team member'],
-      role: 'My Role',
-      link: 'https://www.google.ca',
+      client: 'Me',
+      objective: 'Create a responsive, scalable, kick-ass portfolio.',
+      timeline: '3 months',
+      team: ['Designer (← me)', 'ReactJS Developer (← me)'],
+      role: 'I was the sole designer and developer of the project.',
+      link: 'https://github.com/dhorrock/uxportfolio',
     },
     kickOff: {
       topText: 'Kick off Text',
@@ -494,9 +591,11 @@ const portfolioItems = [
     ],
     design: {
       figma: 'http://www.google.ca/',
-      topText: 'Design Text',
-      images: [{ image: 'http://via.placeholder.com/3000x1500', caption: 'image' }],
-      bottomText: 'Design Text ',
+      topText:
+        'When it came time to update my portfolio I carefully looked at all of the out-of-the-box options available but in the end decided to create a custom portfolio from scratch. I wanted it to be super fast and responsive with minimal loading times — I felt that I could only ensure this by having full control over the portfolio codebase. Special attention was given to image optimization, opting to use inline vector graphics to keep graphics infinitely scalable and small to ensure quick page loads.',
+      images: [{ image: PortfolioDesignImage1, caption: '' }],
+      bottomText:
+        'During the design process I chose to present the portfolio in greyscale to ensure the the design of the portfolio itself wouldn’t cast its style over the design work within the case studies. An added bonus of this was that it also made the case studies pop-off of the page — Ohhhh Color!',
     },
     testing: {
       topText: 'Testing Text',
@@ -514,68 +613,6 @@ const portfolioItems = [
     title: 'ecodialer',
     description: '*Coming Soon*',
     image: ecodialerLogo,
-    link: 'ComingSoon',
-    headerBlurb: {
-      blurbTitle: 'Title',
-      blurb: ['Header text'],
-    },
-    projectInfo: {
-      client: 'Client',
-      objective: 'Objective',
-      timeline: 'X months',
-      team: ['Team member', 'Team member (← me)', 'Team member', 'Team member', 'Team member'],
-      role: 'My Role',
-      link: 'https://www.google.ca',
-    },
-    kickOff: {
-      topText: 'Kick off Text',
-      images: [{ image: 'http://via.placeholder.com/3000x1500', caption: 'Image' }],
-      bottomText: '',
-    },
-    discovery: [
-      {
-        title: '1.',
-        blurb: 'Discovery text.',
-        image: 'http://via.placeholder.com/300x300',
-      },
-      {
-        title: '2.',
-        blurb: 'Discovery text.',
-        image: 'http://via.placeholder.com/300x300',
-      },
-      {
-        title: '3.',
-        blurb: 'Discovery text.',
-        image: 'http://via.placeholder.com/300x300',
-      },
-      {
-        title: '4.',
-        blurb: 'Discovery text.',
-        image: 'http://via.placeholder.com/300x300',
-      },
-    ],
-    design: {
-      figma: 'http://www.google.ca/',
-      topText: 'Design Text',
-      images: [{ image: 'http://via.placeholder.com/3000x1500', caption: 'image' }],
-      bottomText: 'Design Text ',
-    },
-    testing: {
-      topText: 'Testing Text',
-      images: [{ image: 'http://via.placeholder.com/3000x1500', caption: 'image' }],
-      bottomText: 'Testing Text',
-    },
-    takeaway: {
-      topText: 'Takeaway Text',
-      images: [{ image: 'http://via.placeholder.com/3000x1500', caption: 'image' }],
-      bottomText: 'Take Away Text',
-    },
-  },
-  {
-    key: 7,
-    title: 'Portfolio',
-    description: '*Coming Soon*',
-    image: PortfolioLogo,
     link: 'ComingSoon',
     headerBlurb: {
       blurbTitle: 'Title',
